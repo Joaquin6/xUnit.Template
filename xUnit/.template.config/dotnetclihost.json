@@ -1,0 +1,16 @@
+{
+    "symbolInfo": {
+        "copyrightName": {
+            "longName": "copyright-name",
+            "shortName": "copy"
+        },
+        "year": {
+            "longName": "copyright-year",
+            "shortName": "year"
+        },
+        "namespace": {
+            "longName": "namespace",
+            "shortName": "ns"
+        }
+    }
+}

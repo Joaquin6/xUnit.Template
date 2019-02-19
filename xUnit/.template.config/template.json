@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "The Sharp Ninja",
+    "classifications": [ "Common", "Console"],
+    "identity": "GatewayProgrammingSchool.xUnit.CSharp",
+    "name": "xUnit Test Class",
+    "shortName": "xunit-class",
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "symbols": {
+        "copyrightName": {
+            "type": "parameter",
+            "defaultValue": "Your Legal Entity's Name",
+            "replaces": "@copyrightName"
+        },
+        "year":{
+            "type": "parameter",
+            "defaultValue": "2019",
+            "replaces": "@year"   
+        },
+        "namespace": {
+            "type": "parameter",
+            "defaultValue": "MyApp.Tests",
+            "replaces": "@namespace" 
+        }
+    }
+}
