@@ -18,8 +18,8 @@
     </packageTypes>
   </metadata>
   <files>
-    <file src=".template.config\dotnetclihost.json" target=".template.config\dotnetclihost.json" />
-    <file src=".template.config\template.json" target=".template.config\template.json" />
-    <file src="XUnitTest1.cs" target="XUnitTest1.cs" />
+    <file src="..\xUnit\.template.config\dotnetclihost.json" target=".template.config\dotnetclihost.json" />
+    <file src="..\xUnit\.template.config\template.json" target=".template.config\template.json" />
+    <file src="..\xUnit\XUnitTest1.cs" target="XUnitTest1.cs" />
   </files>
 </package>
