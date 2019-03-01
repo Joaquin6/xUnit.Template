@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>GatewayProgrammingSchool.xUnit.CSharp</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Test Class Template for xUnit</title>
     <authors>The Sharp Ninja</authors>
     <owners>Gateway Programming School,Inc.</owners>
