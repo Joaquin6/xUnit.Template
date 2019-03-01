@@ -44,12 +44,12 @@ namespace My.Namespace
         }
 
         [Theory]
-        [ClassData(typeof(IntDataSet))]
+        [ClassData(typeof(IntDataSet1))]
         public void Test1(int data)
         {
             _log.WriteLine(data);
 
-            Assert.Equals(data, data);
+            Assert.Equal(data, data);
         }
     }
 
