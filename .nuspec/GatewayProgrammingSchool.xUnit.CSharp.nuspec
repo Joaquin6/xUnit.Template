@@ -2,12 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>GatewayProgrammingSchool.xUnit.CSharp</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>Test Class Template for xUnit</title>
     <authors>The Sharp Ninja</authors>
     <owners>Gateway Programming School,Inc.</owners>
+    <projectUrl>https://github.com/gatewayprogrammingschool/xUnit.Template</projectUrl>
+    <repository url='https://github.com/gatewayprogrammingschool/xUnit.Template' type="git" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>https://mit-license.org/</licenseUrl>
+    <license type="expression">MIT</license>
     <iconUrl>https://raw.github.com/xunit/media/master/full-logo.png</iconUrl>
     <description>Includes template with xUnit test class and a data class.</description>
     <summary>Test Class Template for xUnit</summary>
@@ -20,6 +22,6 @@
   <files>
     <file src="..\xUnit\.template.config\dotnetclihost.json" target=".template.config\dotnetclihost.json" />
     <file src="..\xUnit\.template.config\template.json" target=".template.config\template.json" />
-    <file src="..\xUnit\XUnitTest1.cs" target="XUnitTest1.cs" />
+    <file src="..\xUnit\XUnitTest.cs" target="XUnitTest.cs" />
   </files>
 </package>

@@ -11,6 +11,10 @@
         "namespace": {
             "longName": "namespace",
             "shortName": "ns"
+        },
+        "test": {
+            "longName": "test-name",
+            "shortName": "test"
         }
     }
 }

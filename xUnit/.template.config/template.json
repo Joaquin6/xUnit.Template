@@ -24,6 +24,11 @@
             "type": "parameter",
             "defaultValue": "MyApp.Tests",
             "replaces": "@namespace" 
+        },
+        "test": {
+            "type": "parameter",
+            "replaces": "@test",
+            "isRequired": true
         }
     }
 }

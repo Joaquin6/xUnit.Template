@@ -10,19 +10,27 @@ dotnet new -i GatewayProgrammingSchool.xUnit.CSharp
 
 ## License
 
-The xUnit Class Template is released under the MIT license.
+The xUnit Class Template is released under the [MIT](https://mit-license.org/) license.
 
 ## Usage
 
+### All Parameters
+
+| Argument | Description | Required | Default |
+|-|-|-|-|
+| -test | Test Name | Yes | _N/A_  |
+| -na | Namespace | No | "MyApp.Tests" |
+| -year | Copyright Year | No | "2019" |
+| -copy | Owner/Company Name | No | "Your Legal Entity's Name" |
+
+__Example__
 ```powershell
-dotnet new xunit-class -na My.Namespace -y "2018 - 2019" -c "Copyright holder"
+dotnet new xunit-class -test "WidgetTest" -na "My.Namespace" -y "2018 - 2019" -c "Copyright holder"
 ```
 
-Adds a new xUnit test class to namespace `My.Namespace` in the current folder with a copyright year for `"2018 - 2019"` and copyright holder of `"Copyright holder"`
+Adds a new xUnit test class named `WidgetTest` to namespace `My.Namespace` in the current folder with a copyright year for `"2018 - 2019"` and copyright holder of `"Copyright holder"`
 
-May be used without arguments to get default values.
-
-Example output:
+__Output__
 
 ```csharp
 
@@ -34,18 +42,18 @@ using Xunit.Abstractions;
 
 namespace My.Namespace
 {
-    public class XUnitTest1
+    public class WidgetTest
     {
         ITestOutputHelper _log;
 
-        public XUnitTest1(ITestOutputHelper log)
+        public WidgetTest(ITestOutputHelper log)
         {
             _log = log;
         }
 
         [Theory]
         [ClassData(typeof(IntDataSet1))]
-        public void Test1(int data)
+        public void WidgetTest1(int data)
         {
             _log.WriteLine(data);
 
@@ -53,7 +61,7 @@ namespace My.Namespace
         }
     }
 
-    public class IntDataSet1 : IEnumerable<object[]>
+    public class WidgetTestDataSet1 : IEnumerable<object[]>
     {
         object[] _data = {
                 10, 20, 30, 40, 50, 60, 70, 80, 90, 100,
@@ -66,7 +74,7 @@ namespace My.Namespace
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+            return this.GetEnumerator();
         }
     }
 }
